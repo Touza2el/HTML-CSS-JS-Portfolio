@@ -1,0 +1,39 @@
+.header-section {
+  position: static;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-section .header-content .header-logo a {
+  color: var(--main-black);
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.header-section .header-content .header-logo a:hover {
+  color: var(--main-color);
+}
+
+.header-section .header-content .header-logo a span {
+  color: var(--main-color);
+}
+
+.header-section .header-content .header-links li a {
+  color: var(--main-black);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header-section .header-content .header-links li a:hover {
+  color: var(--main-color);
+}
+
+.header-section .header-content .header-links li a.active {
+  color: var(--main-color);
+}
+
+.header-section.fixed-header {
+  position: fixed;
+  animation: fixHeader 1.5s ease;
+}
+/*# sourceMappingURL=about.css.map */

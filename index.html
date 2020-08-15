@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>HOME</title>
   </head>
   <body>
     <!-- Start Header Section -->
@@ -21,7 +21,7 @@
               <a href="#" class="active">home</a>
             </li>
             <li>
-              <a href="#">about</a>
+              <a href="/pages/about.html">about</a>
             </li>
             <li>
               <a href="#">services</a>
@@ -36,6 +36,7 @@
               <a href="#">contact</a>
             </li>
           </ul>
+          <div class="mobile-menu">MENU</div>
         </div>
       </div>
     </header>
@@ -46,7 +47,7 @@
 
     <section class="hero-section">
       <div class="hero-content">
-        <h1><span>I build</span> creative things</h1>
+        <h1 id="hero-title"><span>I build</span> creative things</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
           eligendi dolorem doloremque Lorem ipsum dolor sit amet consec
@@ -65,9 +66,12 @@
           <h2>about me</h2>
         </div>
         <div class="about-us-content">
+          <div class="about-us-image mobile">
+            <img src="images/about-us.png" alt="about-us" />
+          </div>
           <div class="about-us-info">
             <h3>my main goal is to help you build your online business</h3>
-            <p>
+            <p class="desc-desktop">
               Lorem ipsum dolor sit amet consectetur adipisicing Odit quisquam
               asperiorgses facere suscipit perspiciatis distinctio obcaecati
               incidunt ullam suscipit dolilormn perspicigatis distinctio
@@ -76,14 +80,22 @@
               perspicniatis distinctio obcaecati incidunt ulaman suscipit
               perspiciatis.
             </p>
-            <p>
+            <p class="desc-desktop">
               Lorem ipsum dolor sit amet consectetur adipisicing Odit quisquam
               asperiorgses facere suscipit perspiciatis distinctio obcaecati
               incidunt ullam suscpit dolilormn.
             </p>
+            <p class="desc-mobile">
+              Lorem ipsum dolor sit amet consectetur adipisicing Odit nam
+              quisquam asperiorgses facere susciptt perspiciatis distinctio
+              obcaecati incidunt ullam suscpit dolilormn Lorem ipsum mon dolor
+              sit amet consectetur adipisicing Odit quisquam asperm facere
+              suscipit perspiciatis distinctio obcaecati incidunt smill ullam
+              suscpit dolilormn suscpit dolilorm.
+            </p>
             <button>read more</button>
           </div>
-          <div class="about-us-image">
+          <div class="about-us-image desktop">
             <img src="images/about-us.png" alt="about-us" />
           </div>
         </div>
@@ -154,6 +166,173 @@
     </div>
 
     <!-- End My Skills Section -->
+
+    <!-- Start Gallery Section -->
+
+    <div class="gallery-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>my gallery</h2>
+        </div>
+        <div class="gallery-content">
+          <div class="gallery-item">
+            <img src="./images/gallery/1.jpg" alt="Design" data-image="one" />
+            <div class="gallery-item-overlay">
+              <button data-btn="one">view more</button>
+            </div>
+            <div class="popup-box-container">
+              <h2 class="close-popup-box">x</h2>
+              <div class="popup-box-image"></div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/gallery/2.jpg" alt="Coding" data-image="two" />
+            <div class="gallery-item-overlay">
+              <button data-btn="two">view more</button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/gallery/3.jpg"
+              alt="gallery"
+              data-image="three"
+            />
+            <div class="gallery-item-overlay">
+              <button data-btn="three">view more</button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/gallery/4.jpg"
+              alt="Marketing"
+              data-image="four"
+            />
+            <div class="gallery-item-overlay">
+              <button data-btn="four">view more</button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/gallery/5.jpg" alt="Sales" data-image="five" />
+            <div class="gallery-item-overlay">
+              <button data-btn="five">view more</button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/gallery/6.jpg"
+              alt="CopyWritting"
+              data-image="six"
+            />
+            <div class="gallery-item-overlay">
+              <button data-btn="six">view more</button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/gallery/7.jpg"
+              alt="Video Editting"
+              data-image="seven"
+            />
+            <div class="gallery-item-overlay">
+              <button data-btn="seven">view more</button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/gallery/8.jpg"
+              alt="Photo Editing"
+              data-image="eight"
+            />
+            <div class="gallery-item-overlay">
+              <button data-btn="eight">view more</button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="./images/gallery/9.jpg"
+              alt="Voice Over"
+              data-image="nine"
+            />
+            <div class="gallery-item-overlay">
+              <button data-btn="nine">view more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Gallery Section -->
+
+    <!-- Start Time Line Section -->
+
+    <div class="time-line-section">
+      <div class="container">
+        <div class="section-title time-line">
+          <h2>my career</h2>
+        </div>
+        <div class="time-line-content">
+          <div class="time-line-year">2020</div>
+          <div class="time-line-left">
+            <div class="content">
+              <h3>digital marketing</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Quis
+                sapiente ducimus nobis odit reprehenderit magnam aliquam qui
+                dolores natus mindset skill .
+              </p>
+            </div>
+          </div>
+          <div class="clear-fix"></div>
+          <div class="time-line-right">
+            <div class="content">
+              <h3>web development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Quis
+                sapiente ducimus nobis odit reprehenderit magnam aliquam qui
+                dolores natus mindset skill .
+              </p>
+            </div>
+          </div>
+          <div class="clear-fix"></div>
+          <div class="time-line-year">2018</div>
+          <div class="time-line-left">
+            <div class="content">
+              <h3>wordPress development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Quis
+                sapiente ducimus nobis odit reprehenderit magnam aliquam qui
+                dolores natus mindset skill .
+              </p>
+            </div>
+          </div>
+          <div class="clear-fix"></div>
+          <div class="time-line-left">
+            <div class="content">
+              <h3>web design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Quis
+                sapiente ducimus nobis odit reprehenderit magnam aliquam qui
+                dolores natus mindset skill .
+              </p>
+            </div>
+          </div>
+          <div class="clear-fix"></div>
+          <div class="time-line-year">2016</div>
+          <div class="time-line-right">
+            <div class="content">
+              <h3>video editing</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Quis
+                sapiente ducimus nobis odit reprehenderit magnam aliquam qui
+                dolores natus mindset skill .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Time Line Section -->
 
     <script src="js/main.js"></script>
   </body>
