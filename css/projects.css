@@ -1,15 +1,11 @@
-// Start Header Section
-
 .header-section {
   background-color: #272727;
 }
-// End Header Section
 
-// Start The Portfolio Page Content
-.portfolio-page {
+.projects-page {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-// End The Portfolio Page Content
+/*# sourceMappingURL=projects.css.map */
