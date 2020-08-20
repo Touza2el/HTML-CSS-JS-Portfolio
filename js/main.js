@@ -9,29 +9,6 @@ window.onscroll = function () {
   } else {
     headerSection.classList.remove('fixed-header');
   }
-
-  // Animate Skills Progress On Scrolling
-
-  const mySkillsSection = document.querySelector('.my-skills-section');
-  let mySkillsSectionOffsetTop = mySkillsSection.offsetTop;
-  let mySkillsSectionOffsetHeight = mySkillsSection.offsetHeight;
-  let windowInnerHeight = this.innerHeight;
-  let windowScrollTop = this.pageYOffset;
-  let mySkills = document.querySelectorAll('.skill-progress span');
-  if (
-    windowScrollTop >
-    mySkillsSectionOffsetTop + mySkillsSectionOffsetHeight - windowInnerHeight
-  ) {
-    mySkills.forEach((skill) => {
-      skill.style.width = skill.dataset.progress;
-      skill.innerText = skill.dataset.progress;
-    });
-  } else {
-    mySkills.forEach((skill) => {
-      skill.style.width = '0';
-      skill.innerText = '';
-    });
-  }
 };
 
 // End Window On Scroll Event
@@ -43,15 +20,33 @@ const headerLinksContainer = document.querySelector('.header-links');
 const headerLinks = document.querySelectorAll('.header-links li a');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-// Toggle Between Header Links
 headerLinks.forEach((link) => {
   link.addEventListener('click', function (event) {
+    // Remove Active Class
     headerLinks.forEach((link) => {
       link.classList.remove('active');
     });
+    // Add Active Class To Clicked Link
     this.classList.add('active');
+    // Remove Active Class From Header Links Container
+    headerLinksContainer.classList.remove('active');
   });
 });
+
+// Sections Scrolling
+
+function scrollFunction(elements) {
+  elements.forEach((element) => {
+    element.addEventListener('click', (event) => {
+      // event.preventDefault();
+      document.querySelector(event.target.dataset.section).scrollIntoView({
+        behavior: 'smooth',
+      });
+    });
+  });
+}
+
+scrollFunction(headerLinks);
 
 // Hide / Show Mobile Menu
 mobileMenu.addEventListener('click', function () {

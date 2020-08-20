@@ -1,42 +1,15 @@
 // Start Header Section
 
 .header-section {
-  position: static;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-  .header-content {
-    .header-logo {
-      a {
-        color: var(--main-black);
-        font-size: 27px;
-        font-weight: bold;
-        &:hover {
-          color: var(--main-color);
-        }
-        span {
-          color: var(--main-color);
-        }
-      }
-    }
-    .header-links {
-      li {
-        a {
-          color: var(--main-black);
-          font-size: 15px;
-          font-weight: bold;
-          &:hover {
-            color: var(--main-color);
-          }
-        }
-        a.active {
-          color: var(--main-color);
-        }
-      }
-    }
-  }
-}
-.header-section.fixed-header {
-  position: fixed;
-  animation: fixHeader 1.5s ease;
+  background-color: #272727;
 }
 // End Header Section
+
+// Start The About Page Content
+.about-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// End The About Page Content
