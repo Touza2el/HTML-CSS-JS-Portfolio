@@ -278,7 +278,7 @@ input {
 
 @media (max-width: 540px) {
   .hero-content h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -588,6 +588,9 @@ input {
 @media (max-width: 540px) {
   .skills-section {
     padding: 50px 0;
+  }
+  .skills-content {
+    width: 90%;
   }
 }
 
@@ -930,8 +933,8 @@ input {
     justify-content: center;
   }
   .services-item {
-    padding: 30px 40px;
-    width: 85%;
+    padding: 30px;
+    width: 90%;
   }
 }
 
