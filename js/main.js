@@ -55,7 +55,7 @@ mobileMenu.addEventListener('click', function () {
 
 // End Header Section
 
-// Start Gallery Section
+// Start Projects Section
 
 const galleryButtons = document.querySelectorAll('.gallery-item button');
 let galleryImages = document.querySelectorAll('.gallery-item img');
@@ -82,7 +82,6 @@ galleryButtons.forEach((button) => {
     imageElement.src = currentImageSource;
     popupBoxImage.appendChild(imageElement);
     popupBoxContainer.style.display = 'flex';
-    console.log(popupBoxContainer);
   });
 });
 
@@ -90,4 +89,4 @@ closePopupBox.addEventListener('click', function () {
   popupBoxContainer.style.display = 'none';
   popupBoxImage.innerHTML = null;
 });
-// End Gallery Section
+// End Projects Section
