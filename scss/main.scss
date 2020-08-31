@@ -807,7 +807,7 @@ input {
 // Start Services Section
 .services-section {
   padding: 100px 0 60px 0;
-  background-color: #f6f6f688;
+  background-color: #f6f6f6;
 }
 .services-content {
   display: flex;
@@ -915,6 +915,7 @@ input {
   transition: transform 0.8s ease;
 }
 .blog-item {
+  padding: 0 10px;
   flex: 0 0 33.33%;
   cursor: pointer;
 }
@@ -923,7 +924,7 @@ input {
 }
 
 .blog-image {
-  width: 340px;
+  width: 100%;
   height: 220px;
   border: 2px solid #eee;
   border-radius: 3px;
@@ -968,6 +969,27 @@ input {
   text-transform: capitalize;
   cursor: pointer;
   outline: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #ff9900ab;
+  }
+}
+// Blog Section Media Queries
+
+@media (max-width: 992px) {
+  .blog-section {
+    padding: 70px 0 170px 0;
+  }
+  .blog-item {
+    padding: 0 10px;
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 540px) {
+  .blog-item {
+    padding: 0 30px;
+    flex: 0 0 100%;
+  }
 }
 
 // End Blog Section
