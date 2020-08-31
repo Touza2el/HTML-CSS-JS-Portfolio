@@ -4,6 +4,7 @@
   --secondary-color: #169dbe;
   --main-black: #444;
 }
+
 // End Variables
 
 // Start General Style
@@ -12,6 +13,9 @@
   padding: 0;
   font-family: roboto;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -803,6 +807,7 @@ input {
 // Start Services Section
 .services-section {
   padding: 100px 0 60px 0;
+  background-color: #f6f6f688;
 }
 .services-content {
   display: flex;
@@ -896,21 +901,75 @@ input {
 // End Services Section
 
 // Start Blog Section
+
 .blog-section {
-  height: 80vh;
-  background-attachment: fixed;
-  background-image: url(../images/blog.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: multiply;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    color: #fff;
-  }
+  padding: 100px 0 200px 0;
+  position: relative;
 }
+.container.blog {
+  overflow: hidden;
+}
+.blog-content {
+  width: 100%;
+  display: flex;
+  transition: transform 0.8s ease;
+}
+.blog-item {
+  flex: 0 0 33.33%;
+  cursor: pointer;
+}
+.blog-item:hover .blog-image img {
+  transform: scale(1.1);
+}
+
+.blog-image {
+  width: 340px;
+  height: 220px;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+
+.blog-date {
+  margin: 10px 0px;
+  color: #444;
+  font-size: 14px;
+}
+.blog-title {
+  text-transform: capitalize;
+  color: #444;
+}
+.blog-description {
+  margin: 10px 0px;
+  color: gray;
+}
+.blog-read-more {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.blog-controls {
+  margin-top: 40px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+.blog-btn {
+  margin: 25px 10px;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+}
+
 // End Blog Section
 
 // Start Contact Me Section

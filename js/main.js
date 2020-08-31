@@ -90,3 +90,37 @@ closePopupBox.addEventListener('click', function () {
   popupBoxImage.innerHTML = null;
 });
 // End Projects Section
+
+// Start Blog Section
+
+const blogContent = document.querySelector('.blog-content');
+const blogItems = document.querySelectorAll('.blog-item');
+const prevButton = document.querySelector('.blog-prev-btn');
+const nextButton = document.querySelector('.blog-next-btn');
+let slideIndex = 0;
+
+function moveToLeft() {
+  if (window.innerWidth > 600) {
+    slideIndex =
+      slideIndex < blogItems.length / 2 ? slideIndex + 1 : blogItems.length / 2;
+    blogContent.style.transform = 'translateX(' + slideIndex * -33.33 + '%)';
+  } else {
+    slideIndex =
+      slideIndex < blogItems.length - 1 ? slideIndex + 1 : blogItems.length - 1;
+    blogContent.style.transform = 'translateX(' + slideIndex * -100 + '%)';
+  }
+}
+function moveToRight() {
+  slideIndex = slideIndex > 0 ? slideIndex - 1 : 0;
+
+  if (window.innerWidth > 600) {
+    blogContent.style.transform = 'translateX(' + slideIndex * -33.33 + '%)';
+  } else {
+    blogContent.style.transform = 'translateX(' + slideIndex * -100 + '%)';
+  }
+}
+
+nextButton.addEventListener('click', moveToLeft);
+prevButton.addEventListener('click', moveToRight);
+
+// End Blog Section
