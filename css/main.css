@@ -190,7 +190,7 @@ input {
 
 @media (max-width: 768px) {
   .header-logo {
-    padding: 15px;
+    padding: 15px 0;
   }
   .header-links {
     position: absolute;
@@ -594,7 +594,7 @@ input {
     padding: 50px 0;
   }
   .skills-content {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -718,7 +718,7 @@ input {
   }
   .gallery-item {
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
   }
   .popup-box-container .popup-box-image {
     width: 85%;
@@ -847,6 +847,9 @@ input {
   .testimonials-section {
     padding: 50px 0;
   }
+  .testimonials-item {
+    width: 100%;
+  }
 }
 
 .services-section {
@@ -942,7 +945,7 @@ input {
   }
   .services-item {
     padding: 30px;
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -1155,7 +1158,7 @@ input {
     padding: 60px 0;
   }
   .contact-me-content {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1257,6 +1260,7 @@ input {
 }
 
 .blog-btn {
+  margin: 5px 0;
   padding: 8px 37px;
 }
 

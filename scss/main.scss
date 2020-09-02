@@ -183,7 +183,7 @@ input {
 // Header Media Queries
 @media (max-width: 768px) {
   .header-logo {
-    padding: 15px;
+    padding: 15px 0;
   }
   .header-links {
     position: absolute;
@@ -568,7 +568,7 @@ input {
     padding: 50px 0;
   }
   .skills-content {
-    width: 90%;
+    width: 100%;
   }
 }
 // End Skills Section
@@ -682,7 +682,7 @@ input {
   }
   .gallery-item {
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
   }
   .popup-box-container {
     .popup-box-image {
@@ -804,6 +804,9 @@ input {
   .testimonials-section {
     padding: 50px 0;
   }
+  .testimonials-item {
+    width: 100%;
+  }
 }
 // End Testimonials Sesction
 
@@ -897,10 +900,9 @@ input {
   }
   .services-item {
     padding: 30px;
-    width: 90%;
+    width: 100%;
   }
 }
-
 // End Services Section
 
 // Start Blog Section
@@ -1001,7 +1003,6 @@ input {
     flex: 0 0 100%;
   }
 }
-
 // End Blog Section
 
 // Start Contact Me Section
@@ -1073,7 +1074,6 @@ input {
     }
   }
 }
-
 // Contact Media Queries
 @media (max-width: 1200px) {
   .contact-me-content {
@@ -1102,7 +1102,7 @@ input {
     padding: 60px 0;
   }
   .contact-me-content {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1218,7 +1218,9 @@ input {
     background-color: #fff;
   }
 }
+
 .blog-btn {
+  margin: 5px 0;
   padding: 8px 37px;
 }
 .find-us-btn {
