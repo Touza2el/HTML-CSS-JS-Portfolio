@@ -950,7 +950,7 @@ input {
 }
 
 .blog-section {
-  padding: 100px 0 200px 0;
+  padding: 100px 0 150px 0;
   position: relative;
 }
 
@@ -1017,9 +1017,13 @@ input {
 
 .blog-controls {
   margin-top: 40px;
-  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 27%;
   position: absolute;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .blog-btn {
@@ -1048,10 +1052,22 @@ input {
   }
 }
 
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 50px 0 120px 0;
+  }
+  .blog-controls {
+    width: 80%;
+  }
+}
+
 @media (max-width: 540px) {
   .blog-item {
     padding: 0px;
     flex: 0 0 100%;
+  }
+  .blog-controls {
+    width: 90%;
   }
 }
 
