@@ -222,6 +222,7 @@ input {
 .hero-section {
   height: 100vh;
   background-image: url(../images/hero-image.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
