@@ -580,9 +580,11 @@ input {
 .gallery-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .gallery-item {
-  width: 33.33%;
+  margin-bottom: 2.5%;
+  width: 31.5%;
   position: relative;
   border: 3px solid #eee;
   img {
@@ -663,7 +665,8 @@ input {
 // Projects Media Queries
 @media (max-width: 768px) {
   .gallery-item {
-    width: 50%;
+    margin-bottom: 3.5%;
+    width: 48%;
   }
 }
 @media (max-width: 540px) {
