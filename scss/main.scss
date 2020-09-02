@@ -928,18 +928,21 @@ input {
 
 .blog-image {
   width: 100%;
-  height: 220px;
   border: 2px solid #eee;
   border-radius: 3px;
   overflow: hidden;
 }
-.blog-image img {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s ease;
+.blog-image {
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+  }
 }
 
 .blog-text {
+  margin-top: 10px;
   padding: 10px;
   border: 1px solid #eee;
 }
@@ -989,13 +992,12 @@ input {
     padding: 70px 0 170px 0;
   }
   .blog-item {
-    padding: 0 10px;
     flex: 0 0 50%;
   }
 }
 @media (max-width: 540px) {
   .blog-item {
-    padding: 0 30px;
+    padding: 0px;
     flex: 0 0 100%;
   }
 }
