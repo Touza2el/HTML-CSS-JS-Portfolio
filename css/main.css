@@ -443,6 +443,7 @@ input {
 }
 
 .time-line-left .content p {
+  margin-bottom: 10px;
   color: #666;
   line-height: 1.6;
 }
@@ -519,6 +520,7 @@ input {
 }
 
 .time-line-right .content p {
+  margin-bottom: 10px;
   color: #666;
   line-height: 1.6;
 }
