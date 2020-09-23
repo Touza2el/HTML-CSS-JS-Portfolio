@@ -283,6 +283,7 @@ input {
 
 @media (max-width: 540px) {
   .hero-content h1 {
+    padding: 0 20px;
     font-size: 30px;
   }
 }
