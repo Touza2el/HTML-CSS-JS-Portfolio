@@ -1213,6 +1213,12 @@ input {
   color: var(--main-color);
 }
 
+.footer-links .footer-social-media a {
+  color: gray;
+  margin-right: 5px;
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
 .footer-links .footer-social-media i {
   margin-right: 5px;
   transition: color 0.4s ease;
