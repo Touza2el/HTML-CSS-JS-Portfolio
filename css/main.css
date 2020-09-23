@@ -254,6 +254,10 @@ input {
   line-height: 1.6;
   color: #eee;
 }
+.hero-content h4 {
+  margin-top: 10px;
+  color: #eee;
+}
 
 .hero-content button {
   margin: 30px;
@@ -285,6 +289,10 @@ input {
   .hero-content h1 {
     padding: 0 5px;
     font-size: 30px;
+  }
+  .hero-content h4 {
+    padding: 0 80px;
+    line-height: 1.6;
   }
 }
 
