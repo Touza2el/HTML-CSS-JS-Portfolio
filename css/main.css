@@ -1083,7 +1083,7 @@ input {
 }
 
 .contact-section {
-  padding: 120px 0;
+  padding: 180px 0;
   background-image: url(../images/contact-me.jpg);
   background-size: cover;
   background-position: center;
@@ -1182,7 +1182,7 @@ input {
 
 @media (max-width: 540px) {
   .contact-section {
-    padding: 60px 0;
+    padding: 120px 0 60px 0;
   }
   .contact-me-content {
     width: 90%;
@@ -1281,8 +1281,8 @@ input {
 
 .footer-btn {
   margin-top: 5px;
-  color: #fff !important;
-  background-color: var(--main-color);
+  color: #272727 !important;
+  background-color: gray;
   border-radius: 5px;
   transition: all 0.4s ease;
 }
