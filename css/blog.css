@@ -4,7 +4,9 @@
 
 
 .posts-container {
-  padding: 180px 230px 100px 230px;
+  margin: auto;
+  width: 70%;
+  padding: 180px 0 100px 0;
 }
 
 .post {
@@ -66,14 +68,24 @@
   font-size: 14px;
 }
 
-@media (max-width:540px) {
+@media (max-width:992px) {
   .posts-container {
-    padding: 120px 23px 40px 23px;
+
+    width: 90%;
+    padding: 180px 0 100px 0;
+  }
+
+}
+
+@media (max-width:768px) {
+  .posts-container {
+    width: 90%;
+    padding: 180px 0 100px 0;
   }
 
   .post {
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   .post-image {
@@ -83,6 +95,13 @@
 
   .post-text {
     width: 100%;
+  }
+
+}
+
+@media (max-width:540px) {
+  .posts-container {
+    padding: 120px 0 40px 0;
   }
 
   .post-title {
