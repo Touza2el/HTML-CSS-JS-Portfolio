@@ -90,7 +90,7 @@ input {
 .header-section.fixed-header .header-content .header-logo a {
   color: var(--main-black);
   font-size: 27px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .header-section.fixed-header .header-content .header-logo a:hover {
@@ -123,6 +123,7 @@ input {
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -141,8 +142,8 @@ input {
 
 .header-logo a {
   color: #fff;
-  font-size: 27px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: normal;
   transition: color 0.4s ease-in-out;
 }
 
@@ -192,6 +193,7 @@ input {
   .header-logo {
     padding: 15px 0;
   }
+
   .header-links {
     position: absolute;
     top: 63px;
@@ -203,17 +205,21 @@ input {
     transition: all 0.6s ease-in-out;
     transform: translateX(100%);
   }
+
   .header-links li a {
     padding: 20px 50px;
     color: var(--main-black);
     transition: all 0.3s ease-in-out;
   }
+
   .header-links li:hover {
     background-color: var(--main-black);
   }
+
   .header-links.active {
     transform: translateX(0%);
   }
+
   .mobile-menu {
     display: block;
   }
@@ -254,6 +260,7 @@ input {
   line-height: 1.6;
   color: #eee;
 }
+
 .hero-content h4 {
   margin-top: 10px;
   color: #eee;
@@ -290,6 +297,7 @@ input {
     padding: 0 7px;
     font-size: 30px;
   }
+
   .hero-content h4 {
     padding: 0 45px;
     line-height: 1.6;
@@ -362,25 +370,32 @@ input {
   .about-section {
     padding: 50px 0 30px 0;
   }
+
   .section-title.about {
     margin-bottom: 30px;
   }
+
   .about-us-content {
     flex-direction: column;
   }
+
   .about-us-info {
     margin-top: 40px;
     width: 100%;
   }
+
   .about-us-info .desc-desktop {
     display: none;
   }
+
   .about-us-info .desc-mobile {
     display: block;
   }
+
   .about-us-image.desktop {
     display: none;
   }
+
   .about-us-image.mobile {
     width: 100%;
     display: block;
@@ -570,31 +585,39 @@ input {
   .skills-section {
     padding: 70px 0;
   }
+
   .section-title.skills {
     margin-bottom: 40px;
   }
+
   .skills-content {
     width: 80%;
     margin: auto;
   }
+
   .time-line-left {
     width: 100%;
   }
+
   .time-line-left .content .tools p.tools-title {
     margin-bottom: 5px;
     width: 100%;
   }
+
   .time-line-right {
     width: 100%;
   }
+
   .time-line-right .content .tools p.tools-title {
     margin-bottom: 5px;
     width: 100%;
   }
+
   .time-line-left:before,
   .time-line-right:before {
     display: none;
   }
+
   .time-line-left .content:before,
   .time-line-right .content:before {
     display: none;
@@ -605,6 +628,7 @@ input {
   .skills-section {
     padding: 50px 0;
   }
+
   .skills-content {
     width: 100%;
   }
@@ -720,17 +744,21 @@ input {
   .projects-section {
     padding: 50px 0;
   }
+
   .section-title.projects {
     margin-bottom: 40px;
     text-align: center;
   }
+
   .gallery-content {
     justify-content: center;
   }
+
   .gallery-item {
     margin-bottom: 20px;
     width: 100%;
   }
+
   .popup-box-container .popup-box-image {
     width: 85%;
   }
@@ -835,9 +863,11 @@ input {
     position: relative;
     padding: 80px 0 80px 0;
   }
+
   .testimonials-content {
     justify-content: space-around;
   }
+
   .testimonials-item {
     margin-bottom: 40px;
     width: 40%;
@@ -848,6 +878,7 @@ input {
   .testimonials-content {
     justify-content: space-around;
   }
+
   .testimonials-item {
     margin-bottom: 40px;
     width: 90%;
@@ -858,6 +889,7 @@ input {
   .testimonials-section {
     padding: 50px 0;
   }
+
   .testimonials-item {
     width: 100%;
   }
@@ -942,6 +974,7 @@ input {
   .services-item {
     padding: 20px 10px;
   }
+
   .services-item .services-item-icon i {
     font-size: 30px;
   }
@@ -951,9 +984,11 @@ input {
   .services-section {
     padding: 50px 0;
   }
+
   .services-content {
     justify-content: center;
   }
+
   .services-item {
     padding: 30px;
     width: 100%;
@@ -1058,6 +1093,7 @@ input {
   .blog-section {
     padding: 70px 0 170px 0;
   }
+
   .blog-item {
     flex: 0 0 50%;
   }
@@ -1067,6 +1103,7 @@ input {
   .blog-section {
     padding: 50px 0 120px 0;
   }
+
   .blog-controls {
     width: 80%;
   }
@@ -1077,6 +1114,7 @@ input {
     padding: 0px;
     flex: 0 0 100%;
   }
+
   .blog-controls {
     width: 90%;
   }
@@ -1171,10 +1209,12 @@ input {
   .contact-me-content {
     width: 60%;
   }
+
   .form-left {
     margin-bottom: 20px;
     width: 100%;
   }
+
   .form-right {
     width: 100%;
   }
@@ -1184,6 +1224,7 @@ input {
   .contact-section {
     padding: 120px 0 60px 0;
   }
+
   .contact-me-content {
     width: 90%;
   }
@@ -1219,6 +1260,7 @@ input {
   transition: color 0.4s ease;
   cursor: pointer;
 }
+
 .footer-links .footer-social-media i {
   margin-right: 5px;
   transition: color 0.4s ease;
