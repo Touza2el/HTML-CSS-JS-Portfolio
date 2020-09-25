@@ -239,6 +239,7 @@ input {
 }
 
 .hero-content {
+  margin-top: 35px;
   position: relative;
   z-index: 3;
   color: #fff;
