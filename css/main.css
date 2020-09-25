@@ -996,7 +996,7 @@ input {
 }
 
 .blog-section {
-  padding: 100px 0 150px 0;
+  padding: 120px 0 200px 0;
   position: relative;
 }
 
@@ -1054,6 +1054,7 @@ input {
 .blog-description {
   margin: 10px 0px;
   color: gray;
+  line-height: 1.6;
 }
 
 .blog-read-more {
