@@ -48,6 +48,7 @@
 .single-post-content p {
     color: #0A0A23;
     font-family: 'Lato', sans-serif;
+    word-spacing: 5px;
 }
 
 .single-post-intro {
@@ -61,11 +62,16 @@
     color: #666;
     font-size: 20px;
     line-height: 1.5;
+    word-spacing: 5px;
 }
 
 .h2-title {
     color: #444;
-    margin: 30px 0 15px 0;
+    margin: 50px 0 15px 0;
+}
+
+.h2-title.node-post {
+    color: #77C800;
 }
 
 .h3-title {
