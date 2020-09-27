@@ -84,6 +84,15 @@
     margin: 20px 0;
 }
 
+.code-image.image-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.code-image.image-with-text span {
+    margin-right: 25px;
+}
+
 .single-post-btn {
     margin-top: 50px;
     text-align: center;

@@ -89,11 +89,11 @@
         </div>
         <main class="single-post-content">
           <p class="single-post-intro">
-            There is a huge number of technologies that's used to build web
+            There is a huge number of technologies that are used to build web
             servers and REST APIs to power and manage websites and web
             applications on the backend. In this article we will take a look at
             one of these modern technologies called Node JS and we will see what
-            is Node JS and how it works.
+            is it and how it works.
           </p>
           <div class="single-post-main-content">
             <section>
@@ -116,9 +116,9 @@
                 c++ built on top of this assembly language.
               </p>
               <p>
-                So, now we can write C++ code on computer which is a much esier
-                than assembly code, so the computer will understand it because
-                it's compiled down to machine code.
+                So, we can write C++ code on computer which is a much esier than
+                assembly code, so the computer will understand it because it's
+                compiled down to machine code.
               </p>
               <p>
                 JavaScript is a progrmming language which abstracted even more
@@ -135,18 +135,18 @@
                 JavaScript code into machine code at a runtime, so by passing
                 JavaScript code through this this V8 engine in the browser the
                 computer can then understand JavaScript, however it can not run
-                JavaScript outside the browser, because there no V8 engine
+                JavaScript outside the browser, because there is no V8 engine
                 compiles it down to machine code outside the browser. And here
                 is where Node JS come into play.
               </p>
               <p>
                 Node JS is a software ( program ) also written into C++ and
-                wraps the V8 engine, which means that the V8 engine lives inside
-                the web browser also lives inside Node JS. Because Node JS is
-                written in C++ it can run directly in our computer, which means
-                by installing and runnig Node JS on our computer,it can take our
-                JavaScript code and run it through the V8 engine that it has
-                inside it and compiles it into machine that computer can
+                wraps the V8 engine, which means that the V8 engine that lives
+                inside the web browser also lives inside Node JS. Because Node
+                JS is written in C++ it can run directly in our computer, which
+                means by installing and runnig Node JS on our computer, it can
+                take our JavaScript code and run it through the V8 engine that
+                it has inside it and compiles it into machine that computer can
                 understand.
               </p>
               <p>
@@ -184,14 +184,14 @@
                 why is a good choice if you want to build the backend of a
                 website or web application, it also has a feature of
                 non-blocking code, and the most important is that Node JS give
-                the ability to use the same language ( JavaScript ) that is used
-                to build the frontend, so you can use only one programming
+                us the ability to use the same language ( JavaScript ) that is
+                used to build the frontend, so you can use only one programming
                 language to build a full stack website or web application.
               </p>
               <p>
                 Another reason of choosing Node JS is that it has a massive
-                community behind it, there is always help if you need it or you
-                are stuck on a problem. And there is also a huge amount of 3rd
+                community behind it, there is always help if you need it or if
+                you stuck on a problem. And there is also a huge amount of 3rd
                 party packages that allow you to add functionalities to your web
                 application without having to reinvent the wheel.
               </p>
@@ -263,12 +263,12 @@
             <section>
               <h2 class="h2-title node-post">7 - Node Package Manager (NPM)</h2>
               <p>
-                When you intall Node JS you get something called NPM stands for
-                Node Package Manager, this tool is used to install 3rd Party
-                Packages or modules such as frameworks or libraries. These
-                packages get stored in a folder that will be created
-                automatically called <i>node_modules</i>, so any package that
-                you install will get listed in a file called
+                When you intall Node JS you get something called NPM which
+                stands for Node Package Manager, this tool is used to install
+                3rd Party Packages or modules such as frameworks or libraries.
+                These packages get stored in a folder that will be created
+                automatically called <i>node_modules</i>. Each package that you
+                install from NPM will get listed in a file called
                 <i>package.json</i> which every Node JS project should include,
                 this file holds information about your application like the
                 name, the version and also a list of all dependencies that your
@@ -299,8 +299,8 @@
                 When we type a website address or a domain name into a web
                 browser, the browser send a request to the web server that's
                 powering that particular website. When the web server recieve a
-                request it decides what to do and what function to perform based
-                on that request, it may communicate to an external API or
+                request it decides what to do and what functions to perform
+                based on that request, it may communicate to an external API or
                 interact with a database, and then send back a response to the
                 web browser in most cases that will be an HTML page, CSS files,
                 images or JSON data.
@@ -308,7 +308,7 @@
               <p>
                 Now we know how a web browser communicate with a web server, but
                 how does the browser know to send a request to the correct web
-                server, to answer this question we need to know a little bit
+                server, to answer this question we need to know a litle bit
                 about IP adrresses, domain name system ( DNS ) and HTTP.
               </p>
               <p>
@@ -338,7 +338,7 @@
               </p>
               <h3 class="h3-title">creating a web server :</h3>
               <p>
-                In Node JS we manually write code to create server which lives
+                In Node JS we manually write code to create a server which lives
                 on the backend of our website, listen for requests coming in
                 from the browser, perform some functions based on these request
                 and then send back responses to the browser. This totally
@@ -410,15 +410,126 @@
                 <img src="../images/node-server/4.PNG" alt="node " />
               </div>
               <p>
-                So now, we have created a web server and we listening to port
-                3000 on the localhost. The only thing that we need is to run the
-                server.js file through node by typing the command bellow on the
-                terminal and start sending request to this server.
+                So now, we have created a web server and we are listening to
+                port 3000 on the localhost. The only thing that we need to do,
+                is to run the server.js file through node by typing the command
+                bellow on the terminal and then we can start sending request to
+                this server.
               </p>
-              <div class="code-image">
+              <div class="code-image image-with-text">
+                <span><em>Open The Terminal and Type This Command :</em></span>
                 <img src="../images/node-server/5.PNG" alt="node " />
               </div>
-              <p>In this we will see how we send responces to the browser</p>
+              <p>
+                In the previous section we see that the
+                <em>createServer()</em> accept a callback function that has
+                access to the request and the response objects. In this section
+                we will see how we can use this response object to send back a
+                respone to the browser.
+              </p>
+              <p>
+                - <em>The 1st step </em> that we should in order to send a
+                response back to the browser is to set the response headers
+                using
+                <strong>steHeader()</strong>
+                function. Response headers give the browser some information
+                about what kind of response is coming back to it for example
+                type of data we sending back, is it text, HTML page, CSS files,
+                images or JSON data, we can also use the response headers to set
+                cookies on the browser.
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/6.PNG" alt="node " />
+              </div>
+              <p>
+                - <em>The 2nd step </em>is to write whatever content we want to
+                send back to the browser using <strong>write()</strong> method.
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/7.PNG" alt="node " />
+              </div>
+              <p>
+                - <em>The 3rd step </em>is to end the response
+                <strong>end()</strong> method which then sends it to the
+                browser.
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/8.PNG" alt="node " />
+              </div>
+              <p>
+                Now, if we run our server and we go back to the browser and make
+                a request to the localhost on port 3000 using the URL :
+                <i>" localhost:3000 "</i> , we will get a response back from the
+                server and this response is just a simple text 'Hello World'
+                that will be printed on the browser screen.
+              </p>
+              <p>
+                If we want to send back some HTML instead of plain text, we have
+                to change the value of the Content-Type property to 'text/html'
+                and then pass our HTML to the <strong>write()</strong> method
+                and then end the response using the
+                <strong>end()</strong> method.
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/9.PNG" alt="node " />
+              </div>
+              <p>
+                Now, let's see how we can send<strong> static files</strong>
+                like HTML pages, CSS files or JavaScript files to the browser
+              </p>
+              <p>
+                Fisrt we need to create a folder called
+                <strong>views</strong> inside our <strong>app</strong> folder
+                and then we create an <strong>index.html</strong> file that we
+                want to send to the browser inside our
+                <strong>views</strong> folder
+              </p>
+              <p>and the we write some code into our HTML file :</p>
+              <div class="code-image">
+                <img src="../images/node-server/10.PNG" alt="node " />
+              </div>
+              <p>
+                Now, in order to send this HTML file to the browser whenever a
+                user make a request for it we need firt to read this file using
+                the <strong>readFile()</strong> method of the core Node JS
+                module fs, and then send the data from that file as a response
+                to the browser.
+              </p>
+              <p>
+                But first we need to require the Node core module
+                <strong>(fs)</strong> on top of our
+                <strong>server.js</strong> file.
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/11.PNG" alt="node " />
+              </div>
+              <p>
+                Now, if we run our server and send a request from the browser to
+                the server we should get back that HTML file as a response.
+              </p>
+              <h3 class="h3-title">basic routing</h3>
+              <p>
+                Routing give us the ability to send a different data or
+                different HTML pages depending on the route that a user visit,
+                so we need a way to figure out the URL that a user request and
+                depending on that URL the server send back a different data.
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/12.PNG" alt="node " />
+              </div>
+              <h3 class="h3-title">status code</h3>
+              <p>
+                Status codes describe the type of response being sent to the
+                browser, there is many different status codes and the most
+                common ones are :
+              </p>
+              <p><strong>200 : </strong> Means that everything is OK.</p>
+              <p>
+                <strong>301 : </strong> The resource was removed permanently to
+                somewhere else.
+              </p>
+              <p><strong>404 : </strong> Page or file is not found.</p>
+              <p><strong>500 : </strong> Internal server errors.</p>
             </section>
           </div>
           <div class="single-post-btn">
