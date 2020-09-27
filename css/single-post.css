@@ -80,6 +80,10 @@
     text-decoration: underline;
 }
 
+.code-image {
+    margin: 20px 0;
+}
+
 .single-post-btn {
     margin-top: 50px;
     text-align: center;
@@ -111,14 +115,15 @@
     }
 
     .single-post-intro {
-
         font-size: 20px;
-
     }
 
     .single-post-main-content p {
-
         font-size: 18px;
-        l
+    }
+
+    .code-image img {
+        display: block;
+        width: 100%;
     }
 }

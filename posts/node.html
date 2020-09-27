@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="    Node JS is a JavaScript runtime environement that executes
+      content="Node JS is a JavaScript runtime environement that executes
     JavaScript on the web server, which means that we can use
     JavaScript as a server-side language just like other programming
     language like PHP, Python or Java."
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/single-post.css" />
     <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
-    <title>Web Development | Node JS</title>
+    <title>Web Development | Build a Web Server using Node JS</title>
   </head>
   <body>
     <!-- Start Header Section -->
@@ -182,8 +182,23 @@
               </p>
             </section>
             <section>
+              <h2 class="h2-title node-post">4 - what should you have ?</h2>
+              <p>
+                <em>Computer</em>
+              </p>
+              <p>
+                <em>Operating System</em>
+              </p>
+              <p>
+                <em>Text Editor</em>
+              </p>
+              <p>
+                <em>Web Browser</em>
+              </p>
+            </section>
+            <section>
               <h2 class="h2-title node-post">
-                3 - what should you know first ?
+                5 - what should you know first ?
               </h2>
               <h3 class="h3-title">JavaScript Building Blocks :</h3>
               <p>
@@ -224,14 +239,14 @@
               </p>
             </section>
             <section>
-              <h2 class="h2-title node-post">4 - Node JS Core Modules</h2>
+              <h2 class="h2-title node-post">6 - Node JS Core Modules</h2>
               <p>
                 Node JS has a large set of core modules that it comes with and
                 the most used modules are fs, path, http and os.
               </p>
             </section>
             <section>
-              <h2 class="h2-title node-post">5 - Node Package Manager (NPM)</h2>
+              <h2 class="h2-title node-post">7 - Node Package Manager (NPM)</h2>
               <p>
                 When you intall Node JS you get something called NPM stands for
                 Node Package Manager, this tool is used to install 3rd Party
@@ -246,7 +261,7 @@
               </p>
             </section>
             <section>
-              <h2 class="h2-title node-post">6 - Node Custom Modules</h2>
+              <h2 class="h2-title node-post">8 - Node Custom Modules</h2>
               <p>
                 In Node JS you can also create your own modules which are simply
                 files that have an export, this way you can export variables,
@@ -256,8 +271,139 @@
             </section>
             <section>
               <h2 class="h2-title node-post">
-                7 - create a web server using Node JS
+                9 - create a web server using Node JS
               </h2>
+              <p>
+                After we've covered what is Node and the basics of how it works
+                on a computer. Now it's time to build a web server that will
+                power the backend of our website using Node JS and JavaScript,
+                but before that let's first understand the process of
+                communication between a web browser and a web server.
+              </p>
+              <p>
+                When we type a website address or a domain name into a web
+                browser, the browser send a request to the web server that's
+                powering that particular website. When the web server recieve a
+                request it decides what to do and what function to perform based
+                on that request, it may communicate to an external API or
+                interact with a database, and then send back a response to the
+                web browser in most cases that will be an HTML page, CSS files,
+                images or JSON data.
+              </p>
+              <p>
+                Now we know how a web browser communicate with a web server, but
+                how does the browser know to send a request to the correct web
+                server, to answer this question we need to know a little bit
+                about IP adrresses, domain name system ( DNS ) and HTTP.
+              </p>
+              <p>
+                An <strong>IP Addresses</strong> are like addresses for
+                computers, each computer connected to the internet has a unique
+                IP address that identify it, when we create a website we need to
+                host it on a special computer ( known as a host ). If we want to
+                connect a server on that host computer we need to know its IP
+                address.
+              </p>
+              <p>
+                IP addresses are just series of numbers and it's hard to
+                remember them that's why we use domain names to mask these IP
+                addresses. And then when we type a domain name into a web
+                browser it will communicate with a <strong>DNS</strong> ( stands
+                for Domain Name System ) to find the IP address that associted
+                with the specified domain name. Then the browser use that IP
+                address to find the computer that host the website and
+                communicate with it. This way the web browser can send requests
+                to this computer and get back responses from it.
+              </p>
+              <p>
+                This communication between the client and the server is done via
+                <strong>HTTP</strong> stands for HyperText Transfer Protocol and
+                has four important methods that a web browser use to communicate
+                with a web server.
+              </p>
+              <h3 class="h3-title">creating a web server :</h3>
+              <p>
+                In Node JS we manually write code to create server which lives
+                on the backend of our website, listen for requests coming in
+                from the browser, perform some functions based on these request
+                and then send back responses to the browser. This totally
+                different from a language like PHP where we don't have to create
+                the server manually because we have other tools manage that for
+                us like apache
+              </p>
+              <p>
+                In the rest of this article we will focus on how to create a
+                local server on our computer using Node JS, which can then be
+                used to actively listen for browser requests and respond to
+                them.
+              </p>
+              <p><strong>Now let's write some code </strong></p>
+              <p>1 - Open Your Text Editor ( Visual Studio Code )</p>
+              <p>2 - Create a folder called it <strong>app</strong></p>
+              <p>
+                3 - inside the app folder Create a file called it
+                <strong>server.js</strong>
+              </p>
+              <p>
+                The server.js file is where we are going to create the server
+              </p>
+              <p>
+                4 - inside the server.js file we need to require a core node
+                module :
+                <strong>http module</strong>
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/1.PNG" alt="node " />
+              </div>
+              <p>now we can use this http module to create a server</p>
+              <div class="code-image">
+                <img src="../images/node-server/2.PNG" alt="node " />
+              </div>
+              <p>
+                This <strong>createServer()</strong> method take a callback
+                function as an argument, this call back function will run every
+                time a request comes to the server and it has access to two
+                different objects ( req and res ). The request object contains
+                information about the request, the response object is the object
+                that we use to send a response to the browser.
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/3.PNG" alt="node " />
+              </div>
+              <p>
+                After we create our web server now we need to invoke the
+                <strong>listen()</strong> method, this method accept three
+                argument, the first argument is the port number which is in our
+                case 3000, the second argument take 'localhost' as a default
+                parameter and the third argument is a callback function that
+                will fire when we start listening.
+              </p>
+              <p>
+                <strong>localhost : </strong>is like a domain name that we use
+                on the web, but this one takes us to a very specific IP address
+                (127.0.0.1) that point to our computer, that means when we are
+                connecting to the localhost domain in a browser, the browser is
+                actually connecting back to our own computer which is the act as
+                a host for our website
+              </p>
+              <p>
+                <strong>port numbers : </strong> are like 'doors' into a
+                computer through which internet communications can be made to
+                different programs
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/4.PNG" alt="node " />
+              </div>
+              <p>
+                So now, we have created a web server and we listening to port
+                3000 on the localhost. The only thing that we need is to run the
+                server.js file through node by typing the command bellow on the
+                terminal and start sending request to this server.
+              </p>
+              <div class="code-image">
+                <img src="../images/node-server/5.PNG" alt="node " />
+              </div>
+              <p>In this we will see how we send responces to the browser</p>
             </section>
           </div>
           <div class="single-post-btn">
