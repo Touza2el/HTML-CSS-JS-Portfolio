@@ -9,57 +9,67 @@
 
 <url>
   <loc>https://www.touzaelhassan.com/</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/pages/blog.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/pages/contact.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/posts/html.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/posts/css.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/posts/javascript.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/posts/react.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/posts/redux.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/posts/node.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/posts/express.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.touzaelhassan.com/posts/mongodb.html</loc>
-  <lastmod>2020-09-25T16:28:25+00:00</lastmod>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.touzaelhassan.com/posts/wordpress.html</loc>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.touzaelhassan.com/posts/seo.html</loc>
+  <lastmod>2020-10-03T14:16:44+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
