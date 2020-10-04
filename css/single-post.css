@@ -70,9 +70,23 @@
     margin: 50px 0 15px 0;
 }
 
+.h2-title.html-post {
+    color: #F16428;
+}
+
+.h2-title.css-post {
+    color: #1A62FA;
+}
+
+.h2-title.javascript-post {
+    color: #F5C500;
+}
+
 .h2-title.node-post {
     color: #77C800;
 }
+
+
 
 .h3-title {
     margin: 20px 0 20px 0;
